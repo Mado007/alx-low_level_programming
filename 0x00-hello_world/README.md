@@ -79,4 +79,12 @@ __<h2 align="center">ADVANDED TASKS</h2>__
 -You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts. <br>
 -Your program should return 1 <br>
 <br>
-[(Back to top)](#) <br>
+
+## 📝 License
+
+Copyright © 2023 [Mahmoud Eid](https://github.com/Mado007).<br />
+This project is [Holberton School](https://github.com/holbertonschool) | [Alx Africa](https://www.alxafrica.com/)  licensed.
+
+---
+
+_This README was generated with ❤️ by [Mahmoud Eid](https://github.com/Mado007)_
