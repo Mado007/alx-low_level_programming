@@ -3,7 +3,7 @@
 
 <div>
 <h3>Note ! :</h3>
-<p>our main.c file created in path /home so we export it to use it "export CFILE=/home/main.c" </p>
+<h4>our main.c file created in path /home so we export it to use it "export CFILE=/home/main.c" <p>our in the sandbox</p></h4>
 </div>
 
 ## _____________________________________________________________________________________________________ 
