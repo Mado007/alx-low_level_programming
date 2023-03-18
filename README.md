@@ -2,8 +2,8 @@
 ### _0x00. C - Hello, World_ ||0x01. C - Variables, if, else, while
  
  
- #### 1. Hello, World .
- #### 2.  Variables, if, else, while .
+ #### 1- Hello, World .
+ #### 2- Variables, if, else, while .
  
 ---
 ## 📝 License
