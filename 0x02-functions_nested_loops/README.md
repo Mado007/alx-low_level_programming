@@ -11,3 +11,12 @@
 - 9. Learn your times table.
 - 10. a + b.
 - 11. 98 Battery Street, the OG.
+
+## 📝 License
+
+Copyright © 2023 [Mahmoud Eid](https://github.com/Mado007).<br />
+This project is [Holberton School](https://github.com/holbertonschool) | [Alx Africa](https://www.alxafrica.com/)  licensed.
+
+---
+
+_This README was generated with ❤️ by [Mahmoud Eid](https://github.com/Mado007)_
