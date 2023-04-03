@@ -8,6 +8,7 @@
 ##### 4- More functions, more nested loops .
 ##### 5- Pointers, arrays and strings .
 ##### 6- More pointers, arrays and strings .
+##### 7- Even more pointers arrays and strings.
 ---
 ## 📝 License
 
