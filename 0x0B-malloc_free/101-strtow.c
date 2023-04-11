@@ -3,7 +3,7 @@
 /**
  * wordCounterRec - count num of words recursively
  * @str: pointer to char
- * @i: current index
+ * @z: current index
  * Return: number of words
  **/
 int wordCounterRec(char *str, int z)
