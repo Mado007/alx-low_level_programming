@@ -1,12 +1,12 @@
-#include <stdio.h>
 #include <string.h>
 #include "3-calc.h"
-#include <stdlib.h>
 
 /**
- * get_op_func - get an operation
- * @s: operator
- * Return: No
+ * get_op_func - find the required operation function
+ * @s: operation string to find its function
+ *
+ * Return: pointer to operation function that takes to int params
+ * otherwith returns NULL
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -18,14 +18,14 @@ op_t ops[] = {
 {"%", op_mod},
 {NULL, NULL}
 };
-int b;
+int i;
 
-b = 0;
-while (ops[b].op && s)
+i = 0;
+while (ops[i].op && s)
 {
-if (!strcmp(ops[b].op, s))
-return (ops[b].f);
-b++;
+if (!strcmp(ops[i].op, s))
+return (ops[i].f);
+i++;
 }
 
 return (NULL);
