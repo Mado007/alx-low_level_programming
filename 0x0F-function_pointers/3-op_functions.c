@@ -2,15 +2,15 @@
 #include <stdlib.h>
 
 /**
- * op_add - add operator function
- * @a: first number
- * @b: second number
+ * op_add - addition
+ * @a: sumnd 1
+ * @b: sumnd 2
  * Return: rsult
  */
 
 int op_add(int a, int b)
 {
-	return (a + b);
+return (a + b);
 }
 
 /**
@@ -22,7 +22,7 @@ int op_add(int a, int b)
 
 int op_sub(int a, int b)
 {
-	return (a - b);
+return (a - b);
 }
 
 /**
@@ -34,11 +34,11 @@ int op_sub(int a, int b)
 
 int op_mul(int a, int b)
 {
-	return (a * b);
+return (a * b);
 }
 
 /**
- * op_div - div operator function
+ * op_div - division
  * @a: divisr
  * @b: dividndo
  * Return: reult
@@ -56,9 +56,9 @@ exit(100);
 
 /**
  * op_mod - modulo
- * @a: first number
- * @b: second number
- * Return: the division remaining of @a and @b
+ * @a: vaper 1
+ * @b: vaper 2
+ * Return: result
  */
 
 int op_mod(int a, int b)
