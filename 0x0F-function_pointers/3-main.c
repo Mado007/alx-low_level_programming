@@ -8,18 +8,35 @@
  * @argv: array of elements
  * Return: 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-int M;
+int a, b;
+char *op;
+int (*op_fun)(int, int);
 
 if (argc != 4)
 {
-printf("Error\n");
-exit(98);
+puts("Error");
+return (98);
 }
 
-M = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
-printf("%d\n", M);
+a = atoi(argv[1]);
+b = atoi(argv[3]);
+op = argv[2];
+op_fun = get_op_func(op);
 
+if (!op_fun)
+{
+puts("Error");
+return (99);
+}
+
+if ((*op == '/' || *op == '%') && !b)
+{
+puts("Error");
+return (100);
+}
+
+printf("%d\n", op_fun(a, b));
 return (0);
 }
