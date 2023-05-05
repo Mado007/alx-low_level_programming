@@ -32,18 +32,18 @@ return (d);
  */
 unsigned int binary_to_uint(const char *b)
 {
-int d;
+int i;
 unsigned int result, temp, exponn;
 
-if (!b)
+if (!i)
 return (0);
 result = temp = 0;
 exponn = 1;
-for (d = _strlenh(b) - 1; b[d]; d--, exponn *= 2)
+for (i = _strlenh(b) - 1; b[i]; i--, exponn *= 2)
 {
-if (b[d] != '0' && b[d] != '1')
+if (b[i] != '0' && b[d] != '1')
 return (0);
-temp = _stoin(b[d]);
+temp = _stoin(b[i]);
 result += temp * exponn;
 }
 return (result);
