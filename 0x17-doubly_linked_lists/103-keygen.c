@@ -1,28 +1,36 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0
+ * generate_key - Generates a key based on the username.
+ * @username: The username.
+ * @key: The buffer to store the generated key.
  */
-int main(void)
+void generate_key(const char *username, char *key)
 {
-unsigned int key;
-unsigned int mask = 0x55;
+int i, sum = 0;
+size_t len = strlen(username);
 
-printf("Please enter the password: ");
-scanf("%x", &key);
-
-if (((key >> 0) ^ mask) == 0x98 &&
-((key >> 8) ^ mask) == 0x3e &&
-((key >> 16) ^ mask) == 0xf2 &&
-((key >> 24) ^ mask) == 0x8c &&
-((key >> 4) ^ mask) == 0x10)
+for (i = 0; i < len; i++)
 {
-printf("OK\n");
-return 0;
+sum += username[i];
 }
 
-printf("Incorrect password\n");
+sprintf(key, "%d", sum ^ 0x1337);
+}
+
+int main(int argc, char *argv[])
+{
+if (argc != 2)
+{
+printf("Usage: %s username\n", argv[0]);
 return (1);
+}
+
+char key[100];
+generate_key(argv[1], key);
+
+printf("%s\n", key);
+
+return (0);
 }
