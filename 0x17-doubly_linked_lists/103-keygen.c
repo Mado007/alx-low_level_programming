@@ -8,17 +8,24 @@
  */
 void generate_key(const char *username, char *key)
 {
-int i, sum = 0;
+unsigned int i, sum = 0;
 size_t len = strlen(username);
 
 for (i = 0; i < len; i++)
 {
-sum += username[i];
+sum += (unsigned int)username[i];
 }
 
-sprintf(key, "%d", sum ^ 0x1337);
+sprintf(key, "%u", sum ^ 0x1337);
 }
 
+/**
+ * main - Entry point of the keygen program.
+ * @argc: The argument count.
+ * @argv: The argument vector.
+ *
+ * Return: 0 on success, 1 on error.
+ */
 int main(int argc, char *argv[])
 {
 if (argc != 2)
